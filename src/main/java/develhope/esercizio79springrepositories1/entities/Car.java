@@ -18,13 +18,13 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "modelName")
     private String modelName;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "serialNumber")
     private long serialNumber;
 
-    @Column(nullable = true)
+    @Column(nullable = true, name = "currentPrice")
     private BigDecimal currentPrice;
 
 }
